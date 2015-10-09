@@ -1,0 +1,18 @@
+{
+	"name": "shader",
+	"version": "0.1.0",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"languages": [{
+			"id": "hlsl",
+			"aliases": ["HLSL", "hlsl"],
+			"extensions": [".fx", ".fxh", ".hlsl", ".hlsli", ".psh", ".vsh", ".sf"]
+		}],
+		"grammars": [{
+			"language": "hlsl",
+			"scopeName": "source.hlsl",
+			"path": "./syntaxes/hlsl.tmLanguage"
+		}]
+	}
+}

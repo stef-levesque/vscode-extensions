@@ -25,3 +25,4 @@ Visual Studio Code v0.9.0 (October 2015)
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [vscode-docs on GitHub](https://github.com/Microsoft/vscode-docs)
+* [HLSL Tools for Visual Studio](https://github.com/tgjones/HlslTools)
