@@ -6,13 +6,29 @@
 	"contributes": {
 		"languages": [{
 			"id": "hlsl",
-			"aliases": ["HLSL", "hlsl"],
+			"aliases": ["HLSL", "High-Level Shading Language", "hlsl"],
 			"extensions": [".fx", ".fxh", ".hlsl", ".hlsli", ".psh", ".vsh", ".sf"]
+		}, {
+			"id": "glsl",
+			"aliases": ["GLSL", "OpenGL Shading Language", "glsl"],
+			"extensions": [".vert", ".frag", ".glsl", ".glslv", ".glslf"]
+		}, {
+			"id": "cg",
+			"aliases": ["Cg", "C for Graphics", "cg"],
+			"extensions": [".cg"]
 		}],
 		"grammars": [{
 			"language": "hlsl",
 			"scopeName": "source.hlsl",
 			"path": "./syntaxes/hlsl.tmLanguage"
+		}, {
+			"language": "glsl",
+			"scopeName": "source.glsl",
+			"path": "./syntaxes/glsl.tmLanguage"
+		}, {
+			"language": "cg",
+			"scopeName": "source.cg",
+			"path": "./syntaxes/cg.tmLanguage"
 		}]
 	}
 }
