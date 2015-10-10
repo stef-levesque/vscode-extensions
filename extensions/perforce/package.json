@@ -1,0 +1,50 @@
+{
+	"name": "perforce",
+	"version": "0.1.0",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"main": "./out/perforceMain.js",
+	"isAMD": true,
+	//"scripts": {
+	//	"vscode:prepublish": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../../gulpfile.plugins.js compile-plugin:perforce"
+	//},
+	"contributes": {
+		"commands": [
+			{
+				"command": "perforce.showOutput",
+				"title": "Show Output",
+				"category": "Perforce"
+			},
+			{
+				"command": "perforce.edit",
+				"title": "Checkout file",
+				"category": "Perforce"
+			},
+			{
+				"command": "perforce.revert",
+				"title": "Revert file",
+				"category": "Perforce"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "alt+p l",
+				"command": "perforce.showOutput",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+p e",
+				"command": "perforce.edit",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+p r",
+				"command": "perforce.revert",
+				"when": "editorTextFocus"
+			}			
+		],
+		"outputChannels": [
+			"Perforce Log"
+		]
+	}
+}
